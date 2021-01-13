@@ -112,9 +112,6 @@ Distributed under the GNU General Public License v3.0. See [LICENSE](https://git
  * [Introduction à Kotlin](https://www.chillcoding.com/blog/2017/07/11/android-kotlin-introduction/)
  * [Déployer une app. Android Wear sur une smartwatch](https://www.chillcoding.com/blog/2016/06/14/android-wear-configuration/)
 
-## Contact [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Macha DA COSTA, on [ChillCoding](https://www.chillcoding.com/?#about).
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/MachaDaCosta/
+Forked and modified by Gabin TODESCO and Kevin VALERIO
+Created by Macha DA COSTA, on [ChillCoding](https://www.chillcoding.com/?#about).

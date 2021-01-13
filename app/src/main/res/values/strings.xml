@@ -17,4 +17,5 @@
     <string name="text_no_email_client">There is no email client installed.</string>
     <string name="text_share">Checkout this project : https://github.com/machadaCosta/basic-ui</string>
     <string name="title_share">Sharing Basic UI App</string>
+    <string name="show_popup">Show popup</string>
 </resources>

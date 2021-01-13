@@ -8,6 +8,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import splitties.alertdialog.appcompat.*
+import splitties.alertdialog.material.materialAlertDialog
 import splitties.toast.toast
 
 class MainActivity : AppCompatActivity() {
@@ -52,5 +54,15 @@ class MainActivity : AppCompatActivity() {
         } catch (ex: ActivityNotFoundException) {
             toast(R.string.text_no_email_client)
         }
+    }
+
+    private fun showAlertDialog() {
+        materialAlertDialog {
+            messageResource = R.string.text_alert_dialog
+            okButton { showAlertDialog() }
+            cancelButton()
+        }.onShow {
+            positiveButton.setText(R.string.show)
+        }.show()
     }
 }

@@ -10,9 +10,11 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.chillcoding.ui.databinding.FragmentMainBinding
+import kotlinx.coroutines.NonCancellable.start
 import splitties.alertdialog.appcompat.*
 import splitties.alertdialog.material.materialAlertDialog
 import splitties.toast.toast
+import splitties.activities.*
 
 
 /**
@@ -37,6 +39,13 @@ class MainFragment : Fragment() {
         binding.mainToastBtn.setOnClickListener { toast(R.string.label_toast) }
         binding.mainAlertBtn.setOnClickListener { showAlertDialog() }
         binding.mainInternetBtn.setOnClickListener { browse("www.chillcoding.com") }
+
+        binding.secondActivityBtn.setOnClickListener {
+            val intent = Intent(context, SecondaryActivity::class.java)
+            intent.putExtra("id", "100")
+            startActivity(intent)
+        }
+
         binding.mainBtn.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_SecondFragment)
         }

@@ -45,6 +45,7 @@ class MainFragment : Fragment() {
 
     }
 
+
     private fun browse(url: String) {
         var browser = Intent(Intent.ACTION_VIEW, Uri.parse("https://" + url))
         startActivity(browser)

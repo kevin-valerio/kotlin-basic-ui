@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -22,18 +23,17 @@ class MainActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             sendEmail("macha@chillcoding.com", "Hi", "Hello!")
         }
+
+        Log.i(MainActivity::class.java.simpleName, "Kotlin is an island")
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
+         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> share(R.string.text_share, R.string.title_share)
             else -> super.onOptionsItemSelected(item)
@@ -56,13 +56,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showAlertDialog() {
-        materialAlertDialog {
-            messageResource = R.string.text_alert_dialog
-            okButton { showAlertDialog() }
-            cancelButton()
-        }.onShow {
-            positiveButton.setText(R.string.show)
-        }.show()
-    }
 }

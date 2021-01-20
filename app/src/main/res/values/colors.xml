@@ -7,6 +7,9 @@
     <color name="grey_800">#2c2c2c</color>
     <color name="yellow_500">#ffeb3b</color>
     <color name="yellow_900">#c8b900</color>
+    <color name="orange">#FF5722</color>
+    <color name="orange_fonce">#F44336</color>
+    <color name="orange_plusfonce">#FB1403</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

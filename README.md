@@ -4,9 +4,9 @@
 # Basic UI
 
 <p align="center">
-  <img src="screens/1.png" alt="Basic UI logo">
-  <img src="screens/2.png" alt="Basic UI logo">
-  <img src="screens/3.png" alt="Basic UI logo">
+  <img src="screens/1.jpg" alt="Screen">
+  <img src="screens/2.jpg" alt="Screen">
+  <img src="screens/3.jpg" alt="Screeo">
 </p>
 
 

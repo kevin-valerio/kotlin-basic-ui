@@ -36,8 +36,14 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_settings -> share(R.string.text_share, R.string.title_share)
+            R.id.action_love -> popToast()
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    private fun popToast(): Boolean {
+        toast("You hit a big fire button hell yeah")
+        return true;
     }
 
     private fun sendEmail(to: String, subject: String, msg: String) {

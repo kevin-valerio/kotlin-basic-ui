@@ -9,8 +9,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import splitties.alertdialog.appcompat.*
-import splitties.alertdialog.material.materialAlertDialog
 import splitties.toast.toast
 
 class MainActivity : AppCompatActivity() {

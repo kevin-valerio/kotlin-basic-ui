@@ -3,6 +3,7 @@
 
 # Basic UI
 
+Some screenshots are shown behind. Not everything.
 <p align="center">
   <img src="screens/1.jpg" width="270" height="585" alt="Screen">
   <img src="screens/2.jpg" width="270" height="585" alt="Screen">
@@ -10,5 +11,7 @@
 </p>
 
 
-Forked and modified by Gabin TODESCO and Kevin VALERIO
+
+
+Forked and modified and Kevin VALERIO
 Initially created by Macha DA COSTA, on [ChillCoding](https://www.chillcoding.com/?#about).

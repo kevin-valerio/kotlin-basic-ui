@@ -52,6 +52,9 @@ class MainFragment : Fragment() {
 
         binding.popUpBtn.setOnClickListener { showAlertDialog() }
 
+        binding.bottomNavBtn.setOnClickListener {
+            startActivity(Intent(context, BottomNavActivity::class.java))
+        }
     }
 
 
